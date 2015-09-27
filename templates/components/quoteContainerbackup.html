@@ -1,0 +1,40 @@
+<div role="tabpanel">
+
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#imageTab" aria-controls="imageTab" role="tab" data-toggle="tab">Image</a></li>
+    <li role="presentation"><a href="#colourTab" aria-controls="colourTab" role="tab" data-toggle="tab">Colourful</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">			  	
+	    <div role="tabpanel" class="tab-pane active" id="imageTab">		   	
+				<div class="text-center">
+					<div image-canvas quote="quote" source="pixabayImg" date="date" ng-show="!loading"></div>
+					<div loading-text ng-show="loading"></div>
+				</div>
+			<div class="rndControls">
+				<button class="btn btn-success cbutton" id="cImgBtn">
+					<span class="glyphicon glyphicon-picture" id="span1"></span>
+					<span class="glyphicon glyphicon-retweet"></span>
+				</button>
+				<span class="glyphicon glyphicon-share vertical" id="favoriteRnd"></span>
+			</div>
+	    </div>
+
+	    <div role="tabpanel" class="tab-pane" id="colourTab">
+	    	<div>
+				<div class="text-center">
+					<canvas id="rndcolourcnv" class = "cnv quotes"></canvas>
+
+				</div>
+			</div>
+			<div class="rndControls">
+					<button class="btn btn-success cbutton" id="cColourBtn">
+						<span class="glyphicon glyphicon-tint" id="span1"></span>
+						<span class="glyphicon glyphicon-retweet"></span>
+					</button>
+					<span class="glyphicon glyphicon-share vertical" id="favoriteColour"></span>
+			</div>
+	    </div>
+	</div>
+</div>

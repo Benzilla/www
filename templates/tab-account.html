@@ -1,0 +1,27 @@
+<ion-view view-title="Account">
+  <ion-content has-bouncing="true" scrollbar-y="false">
+  	<div class="card" id="profileCard">
+		<div class="item item-divider">
+			{{firstName}}
+		</div>
+
+		<div class="item item-image centerH">
+			<img id="profileImg" src="{{picture}}">
+		</div>
+
+<!-- 		<ul class="list">
+		  <li class="item item-toggle">
+		     Remove Ads and Watermark
+		     <label class="toggle toggle-balanced">
+		       <input type="checkbox">
+		       <div class="track">
+		         <div class="handle"></div>
+		       </div>
+		     </label>
+		  </li>
+		</ul> -->
+
+    	<button type="button" class="button button-block button-positive" ng-click="logout()">Logout</button>
+    </div>
+  </ion-content>
+</ion-view>

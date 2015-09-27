@@ -1,0 +1,28 @@
+<ion-slide-box on-slide-changed="slideHasChanged($index)">
+	<ion-slide>
+		<div class="text-center">
+			<div image-canvas quote="quote" name="name" source="imageSource" date="date" imgdata="imgdata" ng-show="!imgLoading"></div>
+			<div loading-text ng-show="imgLoading"></div>
+		</div>
+		<div class="rndControls">
+			<button class="button button-balanced cbutton" id="cImgBtn" ng-click='changeImage()' ng-disabled="imgLoading">
+				<i class="ion-image" id="span1"></i>
+				<i class="ion-loop"></i>
+			</button>
+			<span ng-click="shareImg()" ng-disabled="imgLoading" class="glyphicon glyphicon-share vertical favorite"></span>
+		</div>
+	</ion-slide>
+	<ion-slide>
+		<div class="text-center">
+			<div colour-canvas quote="quote" name="name" colour="colour" date="date" ng-show="!colLoading"></div>
+			<div loading-text ng-show="colLoading"></div>
+		</div>
+		<div class="rndControls">
+			<button class="button button-balanced cbutton" id="cImgBtn" ng-click='changeColour()' ng-disabled="colLoading">
+				<i class="ion-waterdrop" id="span1"></i>
+				<i class="ion-loop"></i>
+			</button>
+			<span ng-click="shareColour()" ng-disabled="colLoading" class="glyphicon glyphicon-share vertical favorite"></span>
+		</div>
+	</ion-slide>
+</ion-slide-box>

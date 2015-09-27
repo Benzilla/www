@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://maxcdn.bootstrapcdn.com http://www.parsecdn.com https://m.facebook.com https://graph.facebook.com http://code.jquery.com http://ajax.googleapis.com http://localhost:*/ https://connect.facebook.net/ http://connect.facebook.net/; style-src 'self' 'unsafe-inline' http://fonts.googleapis.com/; font-src 'self' http://fonts.gstatic.com; connect-src 'self' 'unsafe-inline' https://api.parse.com ws://localhost:*/; frame-src 'self' http://static.ak.facebook.com https://s-static.ak.facebook.com https://www.facebook.com https://www.facebook.com; img-src 'self' *">
+
+
+    <title></title>
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/ionicstyle.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/mycss.css">
+    <link rel="stylesheet" href="css/spinners.css">
+    <link rel="stylesheet" href="bs/css/bootstrap.css">
+    <link rel="stylesheet" href="bs/css/bootstrap-theme.css">
+    <link href="css/toastr.css" rel="stylesheet"/>
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- bs scripts -->
+    <script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.3.4.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="bs/js/bootstrap.js"></script>
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+    <script src="lib/ngCordova/dist/ng-cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/objects/Data.js"></script>
+    <script src="js/objects/Login.js"></script>
+    <script src="js/objects/UI.js"></script>
+    <script src="js/objects/Share.js"></script>
+    <script src="js/objects/QuoteDrawer.js"></script>
+
+    <script src="js/directives/makeButton.js"></script>
+    <script src="js/directives/tweetButton.js"></script>
+    <script src="js/directives/colourCanvas.js"></script>
+    <script src="js/directives/randomButton.js"></script>
+    <script src="js/directives/quoteContainer.js"></script>
+    <script src="js/directives/imageCanvas.js"></script>
+    <script src="js/directives/loadingText.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+
+  <!-- Latest compiled and minified JavaScript -->
+  </head>
+  <body ng-app="starter">
+    <!--
+      The nav bar that will be updated as we navigate between views.
+    -->
+    <ion-nav-bar class="bar-dark">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+    </ion-nav-bar>
+    
+    <ion-nav-view></ion-nav-view>
+
+  </body>
+</html>

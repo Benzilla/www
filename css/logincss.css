@@ -1,0 +1,107 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  background-color: #000 ! important;
+  -webkit-font-smoothing: antialiased;
+  font: normal 14px Roboto,arial,sans-serif;
+}
+
+#bg-img{
+  width:100% !important;
+  height:100% !important;
+  overflow-y: hidden ! important;
+  overflow-x: hidden ! important;
+  background-size: cover;
+  position:fixed;
+  top:0;
+  left:0;
+  margin:0;
+  z-index:-1000;
+  display:none;
+}
+
+#dummy{
+  display:none;
+}
+
+#container{
+ margin:auto;
+ border:3px solid green;
+ width:80%;
+}
+
+#pixalogo{
+  width:500px;
+  margin-top: 20px;
+  margin-bottom:50px;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#footerimg{
+  display: block;
+  width:80%;
+  padding-top:30px;
+}
+
+#loginbox{
+  position:relative;
+  margin: 0 auto;
+  width:450px;
+  background-color:#fff;
+  text-align: center;
+  -webkit-box-shadow: -2px 3px 5px -2px rgba(0,0,0,0.78);
+  -moz-box-shadow: -2px 3px 5px -2px rgba(0,0,0,0.78);
+  box-shadow: -2px 3px 5px -2px rgba(0,0,0,0.78);
+}
+
+#loginbox h1{
+  padding-top:10px;
+}
+
+#loginbox div div{
+  width:100px;
+  height:40px;
+  display:inline-block;
+  margin:10px;
+  color:white;
+}
+
+#loginbox div div:hover{
+  cursor:pointer;
+  opacity:0.8;
+}
+
+#fb{
+  background-color: #3b5998;
+}
+
+#twit{
+  background-color: #4099FF;
+}
+
+#make{
+ background-color: #4099FF;
+}
+
+.vertical{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media (max-width:530px) {
+ #pixalogo {
+    width:90%;
+  }
+}
+
+@media (max-width:470px) {
+ #loginbox {
+    width:90%;
+  }
+}
